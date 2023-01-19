@@ -1,4 +1,4 @@
-const { prettyProjectName } = require('@ionic/cli/lib/project');
+
 const express = require('express');
 const morgan = require('morgan');
 const path = require('path');
