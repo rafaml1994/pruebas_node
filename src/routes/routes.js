@@ -13,11 +13,11 @@ router.get('/', async (req,res) => {
 });
 
 router.post('/add', async (req,res) => {
-    const {nombre, apellidos} = req.body 
+    const {nombre, email} = req.body 
 
     await db.collection('contacts').add({
         nombre,
-        apellidos
+        email
     })
     const add = res.send("nuevo contacto creado");
 });
